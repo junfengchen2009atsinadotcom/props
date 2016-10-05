@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <GflagsRoot>D:\tools\gflags\gflags-2.1.2</GflagsRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(GflagsRoot)\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(GflagsRoot)\build\$(PlatformShortName)\dynamiclib\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>gflags.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>Copy "$(OpencvRoot)\build\$(PlatformShortName)\dynamiclib\bin\*.dll" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

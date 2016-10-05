@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <Tinyxml2Root>D:\tools\tinyxml2\tinyxml2-4.0.1</Tinyxml2Root>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(Tinyxml2Root);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Tinyxml2Root)\build\$(PlatformShortName)\$(PlatformToolset);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>tinyxml2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>tinyxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

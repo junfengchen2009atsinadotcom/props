@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LeveldbRoot>D:\tools\leveldb\leveldb-1.18</LeveldbRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(LeveldbRoot)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LeveldbRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>libleveldbd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>libleveldb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

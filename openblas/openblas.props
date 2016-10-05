@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OpenblasRoot>D:\tools\openblas\xianyi-OpenBLAS-3f6398a</OpenblasRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(OpenblasRoot)\build\$(PlatformShortName)\dynamiclib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OpenblasRoot)\build\$(PlatformShortName)\dynamiclib\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link>
+      <AdditionalDependencies>libopenblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

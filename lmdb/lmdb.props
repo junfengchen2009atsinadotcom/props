@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LmdbRoot>D:\tools\lmdb\lmdb-LMDB_0.9.18</LmdbRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(LmdbRoot)\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LmdbRoot)\build\lib\$(PlatformShortName)\$(DefaultPlatformToolset);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>liblmdbd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>liblmdb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+   
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

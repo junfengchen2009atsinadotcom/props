@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DlibRoot>d:\tools\dlib\dlib-19.0</DlibRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(DlibRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DlibRoot)\build\$(PlatformShortName)\$(PlatformToolset);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>dlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>dlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

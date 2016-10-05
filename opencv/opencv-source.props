@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link />
+    <ClCompile>
+      <AdditionalIncludeDirectories>d:\tools\opencv\opencv;d:\tools\opencv\opencv\cmake\$(PlatformShortName)\$(PlatformToolset)\;d:\tools\opencv\opencv\cmake\$(PlatformShortName)\$(PlatformToolset)\3rdparty\libtiff;d:\tools\opencv\opencv\sources\3rdparty\zlib;d:\tools\opencv\opencv\cmake\$(PlatformShortName)\$(PlatformToolset)\3rdparty\zlib;D:\tools\opencv\opencv\sources\3rdparty\ippicv\unpack\ippicv_win\include;D:\tools\opencv\opencv\sources\3rdparty\libtiff;D:\tools\opencv\opencv\cmake\$(PlatformShortName)\$(PlatformToolset)\3rdparty\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__OPENCV_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
