@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="openssl"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(OpensslRoot)\build\x86\v90\include&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="libeay32.lib"
+		AdditionalLibraryDirectories="&quot;D:\tools\openssl\openssl-1.0.2g\build\x86\v90\lib&quot;"
+	/>
+	<UserMacro
+		Name="OpensslRoot"
+		Value="D:\tools\openssl\openssl-1.0.2h"
+	/>
+</VisualStudioPropertySheet>
