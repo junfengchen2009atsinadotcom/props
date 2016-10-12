@@ -11,7 +11,7 @@
 	<Tool
 		Name="VCLinkerTool"
 		AdditionalDependencies="libeay32.lib"
-		AdditionalLibraryDirectories="&quot;D:\tools\openssl\openssl-1.0.2g\build\x86\v90\lib&quot;"
+		AdditionalLibraryDirectories="&quot;$(OpensslRoot)\build\x86\v90\lib&quot;"
 	/>
 	<UserMacro
 		Name="OpensslRoot"
