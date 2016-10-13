@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <JsoncppRoot>D:\tools\jsoncpp\jsoncpp-1.7.3</JsoncppRoot>
+    <JsoncppRoot>D:\tools\jsoncpp\jsoncpp-1.7.2</JsoncppRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(JsoncppRoot)\include;$(IncludePath)</IncludePath>
