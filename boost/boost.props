@@ -6,7 +6,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(BoostRoot);$(DlibRoot)\boost;$(IncludePath)</IncludePath>
-    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(PlatformToolset);$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />
