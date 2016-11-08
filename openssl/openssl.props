@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <OpensslRoot>D:\tools\openssl\openssl-1.0.2h</OpensslRoot>
+    <OpensslRoot>D:\tools\openssl\openssl-1.1.0b</OpensslRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(OpensslRoot)\build\$(PlatformShortName)\$(PlatformToolset)\include;$(IncludePath)</IncludePath>
@@ -11,7 +11,7 @@
   <ItemDefinitionGroup>
     <ClCompile />
     <Link>
-      <AdditionalDependencies>libeay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />

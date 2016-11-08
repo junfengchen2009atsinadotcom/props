@@ -10,11 +10,11 @@
 	/>
 	<Tool
 		Name="VCLinkerTool"
-		AdditionalDependencies="libeay32.lib"
+		AdditionalDependencies="libcrypto.lib"
 		AdditionalLibraryDirectories="&quot;$(OpensslRoot)\build\x86\v90\lib&quot;"
 	/>
 	<UserMacro
 		Name="OpensslRoot"
-		Value="D:\tools\openssl\openssl-1.0.2h"
+		Value="D:\tools\openssl\openssl-1.1.0b"
 	/>
 </VisualStudioPropertySheet>
