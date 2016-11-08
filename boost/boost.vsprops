@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="boost"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(BoostRoot)&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(BoostRoot)\build\x86\v90&quot;"
+	/>
+	<UserMacro
+		Name="BoostRoot"
+		Value="D:\tools\boost\boost_1_62_0"
+	/>
+</VisualStudioPropertySheet>
