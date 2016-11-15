@@ -2,11 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <BoostRoot>D:\tools\boost\boost_1_62_0</BoostRoot>
+    <BoostRoot>D:\tools\boost\boost_1_61_0</BoostRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(BoostRoot);$(IncludePath)</IncludePath>
-    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset);$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />
