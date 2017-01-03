@@ -3,19 +3,19 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
   	<OpencvRoot>d:\tools\opencv\opencv</OpencvRoot>
-    <OpencvContribRoot>d:\tools\opencv\opencv_contrib-3.1.0</OpencvContribRoot>
+    <OpencvContribRoot>d:\tools\opencv\opencv_contrib-3.2.0</OpencvContribRoot>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(OpencvContribRoot)\modules\xfeatures2d\include;$(OpencvContribRoot)\modules\text\include;$(OpencvContribRoot)\modules\tracking\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(OpencvContribRoot)\modules\xfeatures2d\include;$(OpencvContribRoot)\modules\text\include;$(OpencvContribRoot)\modules\tracking\include;$(OpencvContribRoot)\modules\dnn\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(PlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />
     <Link Condition="'$(Configuration)'=='Debug'">
-      <AdditionalDependencies>opencv_xfeatures2d310d.lib;opencv_text310d.lib;opencv_tracking310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_aruco320d.lib;opencv_bgsegm320d.lib;opencv_bioinspired320d.lib;opencv_ccalib320d.lib;opencv_datasets320d.lib;opencv_dnn320d.lib;opencv_dpm320d.lib;opencv_face320d.lib;opencv_fuzzy320d.lib;opencv_line_descriptor320d.lib;opencv_optflow320d.lib;opencv_phase_unwrapping320d.lib;opencv_plot320d.lib;opencv_reg320d.lib;opencv_rgbd320d.lib;opencv_saliency320d.lib;opencv_stereo320d.lib;opencv_structured_light320d.lib;opencv_surface_matching320d.lib;opencv_text320d.lib;opencv_xfeatures2d320d.lib;opencv_ximgproc320d.lib;opencv_xobjdetect320d.lib;opencv_xphoto320d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Link Condition="'$(Configuration)'=='Release'">
-      <AdditionalDependencies>opencv_xfeatures2d310.lib;opencv_text310.lib;opencv_tracking310.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_aruco320.lib;opencv_bgsegm320.lib;opencv_bioinspired320.lib;opencv_ccalib320.lib;opencv_datasets320.lib;opencv_dnn320.lib;opencv_dpm320.lib;opencv_face320.lib;opencv_fuzzy320.lib;opencv_line_descriptor320.lib;opencv_optflow320.lib;opencv_phase_unwrapping320.lib;opencv_plot320.lib;opencv_reg320.lib;opencv_rgbd320.lib;opencv_saliency320.lib;opencv_stereo320.lib;opencv_structured_light320.lib;opencv_surface_matching320.lib;opencv_text320.lib;opencv_xfeatures2d320.lib;opencv_ximgproc320.lib;opencv_xobjdetect320.lib;opencv_xphoto320.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>    
   </ItemDefinitionGroup>
   <ItemGroup />

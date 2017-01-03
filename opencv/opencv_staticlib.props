@@ -13,10 +13,10 @@
   <ItemDefinitionGroup>
     <ClCompile />
     <Link Condition="'$(Configuration)'=='Debug'">
-      <AdditionalDependencies>ippicvmt.lib;IlmImfd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;opencv_ts310d.lib;opencv_world310d.lib;zlibd.lib;comctl32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ippicvmt.lib;ilmimfd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;opencv_ts320d.lib;opencv_world320d.lib;zlibd.lib;comctl32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Link Condition="'$(Configuration)'=='Release'">
-      <AdditionalDependencies>ippicvmt.lib;IlmImf.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;opencv_ts310.lib;opencv_world310.lib;zlib.lib;comctl32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ippicvmt.lib;ilmimf.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;opencv_ts320.lib;opencv_world320.lib;zlib.lib;comctl32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
