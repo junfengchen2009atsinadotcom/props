@@ -5,8 +5,8 @@
     <OpensslRoot>D:\tools\openssl\openssl-1.1.0b</OpensslRoot>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(OpensslRoot)\build\$(PlatformShortName)\$(PlatformToolset)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(OpensslRoot)\build\$(PlatformShortName)\$(PlatformToolset)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OpensslRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OpensslRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />
