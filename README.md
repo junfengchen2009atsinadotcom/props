@@ -31,7 +31,7 @@ This implementation is built on a *fork* of Faster R-CNN Python code ([here](htt
 
 ### Results
 
-                        | training data                       | test data    | mAP (paper)   | mAP (this repo)
+| training data                       | test data    | mAP (paper)   | mAP (this repo)
  :--- | :--- | :--- | :--- | :--- |
 Fast R-CNN  (FRCN)      | VOC 07 trainval                     | VOC 07 test  | 66.9   | 67.6
 FRCN with OHEM          | VOC 07 trainval                     | VOC 07 test  | 69.9   | 71.5
