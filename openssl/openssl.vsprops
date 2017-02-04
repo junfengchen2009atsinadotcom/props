@@ -15,6 +15,6 @@
 	/>
 	<UserMacro
 		Name="OpensslRoot"
-		Value="D:\tools\openssl\openssl-1.1.0c"
+		Value="D:\tools\openssl\openssl-1.1.0d"
 	/>
 </VisualStudioPropertySheet>
