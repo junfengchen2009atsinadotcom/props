@@ -5,9 +5,12 @@
   	<OpencvRoot>d:\tools\opencv\opencv</OpencvRoot>
     <OpencvContribRoot>d:\tools\opencv\opencv_contrib-3.2.0</OpencvContribRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(OpencvContribRoot)\modules\xfeatures2d\include;$(OpencvContribRoot)\modules\text\include;$(OpencvContribRoot)\modules\tracking\include;$(OpencvContribRoot)\modules\dnn\include;$(OpencvContribRoot)\modules\line_descriptor\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(PlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />

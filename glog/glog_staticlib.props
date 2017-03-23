@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <GlogRoot>D:\tools\glog\glog-0.3.4</GlogRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>  
   <PropertyGroup>
     <IncludePath>$(GlogRoot)\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(GlogRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(GlogRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link Condition="'$(Configuration)'=='Debug'">

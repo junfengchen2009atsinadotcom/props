@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <BoostRoot>D:\tools\boost\boost_1_61_0</BoostRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>  
   <PropertyGroup>
     <IncludePath>$(BoostRoot);$(IncludePath)</IncludePath>
-    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BoostRoot)\build\$(PlatformShortName)\$(VCVersion)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />

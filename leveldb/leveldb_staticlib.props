@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <LeveldbRoot>D:\tools\leveldb\leveldb-1.18</LeveldbRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>  
   <PropertyGroup>
     <IncludePath>$(LeveldbRoot)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(LeveldbRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LeveldbRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link Condition="'$(Configuration)'=='Debug'">

@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <OpencvRoot>d:\tools\opencv\opencv</OpencvRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(OpencvRoot)\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(DefaultPlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
     <LibraryPath Condition="'$(PlatformShortName)'=='x86'">$(OpencvRoot)\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32;$(LibraryPath)</LibraryPath>
     <LibraryPath Condition="'$(PlatformShortName)'=='x64'">$(OpencvRoot)\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>

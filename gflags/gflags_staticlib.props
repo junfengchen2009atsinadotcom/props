@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <GflagsRoot>D:\tools\gflags\gflags-2.2.0</GflagsRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(GflagsRoot)\build_new\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(GflagsRoot)\build_new\$(PlatformShortName)\$(DefaultPlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(GflagsRoot)\build_new\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link Condition="'$(Configuration)'=='Debug'">

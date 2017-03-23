@@ -4,9 +4,12 @@
   <PropertyGroup Label="UserMacros">
     <ProtobufRoot>D:\tools\protobuf\protobuf-3.1.0</ProtobufRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(ProtobufRoot)\build_new\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProtobufRoot)\build_new\staticlib\$(PlatformShortName)\$(DefaultPlatformToolset);$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProtobufRoot)\build_new\staticlib\$(PlatformShortName)\$(VCVersion);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link Condition="'$(Configuration)'=='Debug'">
