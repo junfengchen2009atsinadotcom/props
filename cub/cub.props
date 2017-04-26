@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <CubRoot>D:\tools\cub\cub-1.6.4</CubRoot>
+  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>  
+  <PropertyGroup>
+    <IncludePath>$(CubRoot);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
