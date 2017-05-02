@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <OpenblasRoot>D:\tools\openblas\xianyi-OpenBLAS-3f6398a</OpenblasRoot>
+    <OpenblasRoot>$(Root)\tools\openblas\xianyi-OpenBLAS-3f6398a</OpenblasRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(OpenblasRoot)\build\$(PlatformShortName)\dynamiclib\include;$(IncludePath)</IncludePath>

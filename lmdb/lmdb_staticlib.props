@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <LmdbRoot>D:\tools\lmdb\lmdb-LMDB_0.9.18</LmdbRoot>
+    <LmdbRoot>$(Root)\tools\lmdb\lmdb-LMDB_0.9.18</LmdbRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(LmdbRoot)\build\include;$(IncludePath)</IncludePath>

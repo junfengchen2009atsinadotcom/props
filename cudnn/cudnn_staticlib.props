@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <CudnnRoot>D:\tools\cudnn\cuda</CudnnRoot>
+    <CudnnRoot>$(Root)\tools\cudnn\cuda</CudnnRoot>
   </PropertyGroup>
   <PropertyGroup>
   	<IncludePath>$(CudnnRoot)\include;$(IncludePath)</IncludePath>
