@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="protobuf3_staticlib_release"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(ProtobufRoot)\build_new\include&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+    AdditionalDependencies="libprotobuf.lib"
+		AdditionalLibraryDirectories="&quot;$(ProtobufRoot)\build_new\staticlib\x64\v90&quot;"
+	/>
+	<UserMacro
+		Name="ProtobufRoot"
+		Value="D:\tools\protobuf\protobuf-3.3.0"
+	/>
+</VisualStudioPropertySheet>
