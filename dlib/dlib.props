@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <DlibRoot>d:\tools\dlib\dlib-19.0</DlibRoot>
+    <DlibRoot>$(Root)\tools\dlib\dlib-19.0</DlibRoot>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(DlibRoot);$(IncludePath)</IncludePath>
