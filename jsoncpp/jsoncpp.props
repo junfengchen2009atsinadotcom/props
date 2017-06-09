@@ -2,11 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <JsoncppRoot>$(Root)\tools\jsoncpp\jsoncpp-1.7.3</JsoncppRoot>
+    <JsoncppRoot>$(Root)\tools\jsoncpp\jsoncpp-1.8.0</JsoncppRoot>
   </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(JsoncppRoot)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(JsoncppRoot)\build\$(PlatformShortName)\$(PlatformToolset)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(JsoncppRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile />
