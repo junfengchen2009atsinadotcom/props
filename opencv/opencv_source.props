@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OpencvRoot>$(Root)\tools\opencv\opencv</OpencvRoot>
+  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(OpencvRoot)\sources\3rdparty\libjpeg;$(OpencvRoot)\sources\3rdparty\libpng;$(OpencvRoot)\sources\3rdparty\libtiff;$(OpencvRoot)\sources\3rdparty\zlib;$(OpencvRoot)\cmake\x86\v140\3rdparty\libtiff;$(OpencvRoot)\cmake\x86\v140\3rdparty\zlib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OpencvRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(PlatformShortName)'=='x86'">$(OpencvRoot)\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(PlatformShortName)'=='x64'">$(OpencvRoot)\sources\3rdparty\ippicv\unpack\ippicv_win\lib\intel64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="OpenCVRoot">
+      <Value>$(OpenCVRoot)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
