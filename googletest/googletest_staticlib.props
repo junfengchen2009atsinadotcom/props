@@ -13,10 +13,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link Condition="'$(Configuration)'=='Debug'">
-      <AdditionalDependencies>gmockd.lib;gtestd.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gmockd.lib;gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Link Condition="'$(Configuration)'=='Release'">
-      <AdditionalDependencies>gmock.lib;gtest.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gmock.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
