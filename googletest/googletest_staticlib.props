@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <GoogletestRoot>$(Root)\tools\googletest\googletest-release-1.8.0</GoogletestRoot>
+  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v120'"><VCVersion>v120</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v140'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup Label="UserMacros" Condition="'$(DefaultPlatformToolset)'=='v141'"><VCVersion>v140</VCVersion></PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(GoogletestRoot)\googletest\include;$(GoogletestRoot)\googlemock\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(GoogletestRoot)\build\$(PlatformShortName)\$(VCVersion)\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link Condition="'$(Configuration)'=='Debug'">
+      <AdditionalDependencies>gmockd.lib;gtestd.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link Condition="'$(Configuration)'=='Release'">
+      <AdditionalDependencies>gmock.lib;gtest.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
